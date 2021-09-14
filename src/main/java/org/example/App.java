@@ -12,8 +12,12 @@ public class App
     public static void main( String[] args )
     {
         Scanner scanner = new Scanner(System.in);
+
+        //Input
         System.out.print("Please enter the number of the month: ");
         int monthNumber = scanner.nextInt();
+
+        //Process input for month
         String month = "invalid";
         switch(monthNumber) {
             case 1:
@@ -56,6 +60,8 @@ public class App
                 month = "Invalid Input";
                 break;
         }
+
+        //Output
         System.out.println("The name of the month is " + month + ".");
     }
 }
